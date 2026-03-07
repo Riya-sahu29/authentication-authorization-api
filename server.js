@@ -13,5 +13,5 @@ app.get("/", (req, res) => {
   res.send("Auth API Running...");
 });
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const PORT = 5000;  
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));  
