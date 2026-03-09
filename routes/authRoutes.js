@@ -7,7 +7,7 @@ const router = express.Router();
 router.post("/register", register);
 router.post("/login", login);
 router.post("/logout", protect, logout);
-router.get("/me", protect, getMe);
+router.get("/me", protect, getMe);  
 
 router.put("/update-profile", protect, updateProfile);
 router.put("/change-password", protect, changePassword);
@@ -19,4 +19,4 @@ router.get("/admin", protect, authorize("admin"), (req, res) => {
     message: "Welcome Admin" });
 });
 
-module.exports = router;
+module.exports = router;  
