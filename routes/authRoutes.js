@@ -11,12 +11,12 @@ router.get("/me", protect, getMe);
 
 router.put("/update-profile", protect, updateProfile);
 router.put("/change-password", protect, changePassword);
-router.delete("/delete-account", protect, deleteAccount);
+router.delete("/delete-account", protect, deleteAccount);           
 
 //  Protected Route
 router.get("/admin", protect, authorize("admin"), (req, res) => {
   res.json({
-    message: "Welcome Admin" });
+    message: "Welcome Admin" });      
 });
 
 module.exports = router;  
